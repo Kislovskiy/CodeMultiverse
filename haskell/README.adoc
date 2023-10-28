@@ -3,7 +3,7 @@
 == "Learn Physics with Functional Programming" Scott N. Walck
 
 [quote, "Learn Physics with Functional Programming" Scott N. Walck]
----
-_Anonymous function_ or a _lambda function_ is a function that is called after the lambda calculus developed by Alonzo Church in the 1920s. (Church was Alan Turing's PhD advisor.) The backslash character (\\) was thourhgt by Haskell's creators to look a bit like the lowercase Greek letter lambda.
----
+
+"_Anonymous function_ or a _lambda function_ is a function that is called after the lambda calculus developed by Alonzo Church in the 1920s. (Church was Alan Turing's PhD advisor.) The backslash character (\\) was thourhgt by Haskell's creators to look a bit like the lowercase Greek letter lambda."
+-- Scott N.Walck, Learn Physics with Functional Programming 
 
