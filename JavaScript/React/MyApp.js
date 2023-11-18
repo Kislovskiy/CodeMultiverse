@@ -9,4 +9,3 @@ function Buttion() {
 function MyApp() {
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Welcome to my app"), /*#__PURE__*/React.createElement(Buttion, null));
 }
-
