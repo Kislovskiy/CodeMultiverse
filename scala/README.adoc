@@ -1,0 +1,11 @@
+= Scala
+
+== sbt
+`sbt` - _Simple Build Tool_ is a build tool for Scala applications. See Chapter 17 Building Project with sbt from <<ScalaCookbook>>
+
+[bibliography]
+== References
+
+* [[[ScalaCookbook]]] https://learning.oreilly.com/library/view/scala-cookbook-2nd/9781492051534/[2nd edition] was discovered by me in Rolex Learning Center and is an incredible resource for in-depth answers to common questions.
+* https://superruzafa.github.io/visual-scala-reference/[Visual Scala Reference ] has an amazing tex diagrams illustrating many Scala algorithms (https://github.com/superruzafa/visual-scala-reference/tree/master[GitHub]).
+* Scala for Impatient, is a very nice book to pick up the language.
