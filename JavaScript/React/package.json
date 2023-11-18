@@ -1,0 +1,19 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Minimal React App",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --plugins @babel/plugin-transform-react-jsx MyApp.jsx > MyApp.js"
+  },
+  "author": "Artem Kislovskiy",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/plugin-transform-react-jsx": "^7.22.15"
+  }
+}

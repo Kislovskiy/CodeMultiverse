@@ -1,0 +1,23 @@
+= React
+
+Very minimalistic React app.
+
+Why do I need React? Why not just?
+```
+document.createElement
+```
+
+== Installation
+`npm` is your best friend to get dependencies.
+
+```shell
+$ npm --version
+10.2.0
+$ npm init
+$ npm install --save react
+$ npm install --save react-dom
+$ npm install --save-dev @babel/cli
+$ npm install --save-dev @babel/plugin-transform-react-jsx
+```
+
+You'll also need to define custom `"build": "babel --plugins @babel/plugin-transform-react-jsx MyApp.jsx > MyApp.js"` command in `package.json`.
