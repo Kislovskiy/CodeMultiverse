@@ -1,4 +1,3 @@
 = CodeMultiverse
 
-Let's use AsciiDoc for the readme. 
-
+Let's use AsciiDoc for the readme.
