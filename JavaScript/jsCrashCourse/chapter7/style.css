@@ -1,0 +1,24 @@
+h1 {
+    color: darkblue;
+    font-size: italic;
+}
+
+#main-heading {
+    font-size: 48px;
+}
+
+strong {
+    color: darkslategray;
+}
+
+p strong {
+    font-size: 24px;
+}
+
+.highlight {
+    background-color: lightskyblue;
+}
+
+.highlight strong {
+    background-color: oldlace;
+}

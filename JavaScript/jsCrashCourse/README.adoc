@@ -1,0 +1,16 @@
+= Java Script
+
+https://nostarch.com/javascript-crash-course[JavaScript Crash Course]
+
+== Chapter 7
+Modern web pages are made with three languages: HTML, JavaScript, and CSS. At a basic level, HTML defines the content of the page, JavaScript defines the behavior of the page, and CSS, short for Cascading Style Sheets, defines the appearance of the page
+
+== Chapter 8
+Browswer reads HTML from top to bottom, building a Document Object Model (DOM)
+as it goes. The DOM could be manipulated with JavaScript and CSS.
+There are multiple interfaces to the DOM, e.g. HTML DOM, SVG DOM, each has
+its own API.
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model[DOM]
+
+== Chapter 14
+SVG and introduction to D3.js.
