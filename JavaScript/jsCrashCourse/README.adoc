@@ -13,4 +13,4 @@ its own API.
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model[DOM]
 
 == Chapter 14
-SVG and introduction to D3.js.
+SVG and introduction to D3.js (Data-Driven Documents). JavaScript can be used to add interactivity to SVG elements, and CSS can be used to style them.
