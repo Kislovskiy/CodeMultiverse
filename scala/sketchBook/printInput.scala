@@ -1,4 +1,5 @@
-//> using resourceDir ./
+//> using resourceDir resources
+
 import scala.io.Source
 
 object printInput extends App {

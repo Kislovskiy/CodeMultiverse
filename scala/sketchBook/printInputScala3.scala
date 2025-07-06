@@ -1,8 +1,11 @@
-//> using resourceDir ./
-import scala.io.Source
+import scala.util.{Try, Using, Success, Failure}
 
-@main
-def main(): Unit = {
-  val inputs = Source.fromResource("input.txt").getLines.map(_.toInt).toSeq
-  println(inputs.mkString("|"))
+@main def printInputScala3(): Unit = {
+  def readFileAsSeq(filename: String): Try[Seq[String]] =
+    Using(io.Source.fromFile(filename)) { _.getLines.toSeq }
+
+  readFileAsSeq("resources/input.txt") match {
+    case Success(value)     => println(value.mkString("|"))
+    case Failure(exception) => println("Couldn't get lines.")
+  }
 }
