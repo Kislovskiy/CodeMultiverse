@@ -7,6 +7,21 @@ import fs2.Stream
 
 import cats.effect.unsafe.implicits.global
 
+/** A sketch from Chapter 10 from Grokking Functional Programming.
+ *
+ * @example {{{
+ * $ scala-cli fpCityRankings.scala
+ * Compiling project (Scala 3.7.0, JVM (21))
+ * Compiled project (Scala 3.7.0, JVM (21))
+ * List(CityStats(Sydney,20000), CityStats(Lima,20000), CityStats(Dublin,20000))
+ * List(CityStats(Sydney,40000), CityStats(Lima,40000), CityStats(Dublin,40000))
+ * List(CityStats(Sydney,60000), CityStats(Lima,60000), CityStats(Dublin,60000))
+ * List(CityStats(Sydney,80000), CityStats(Lima,80000), CityStats(Dublin,80000))
+ * List(CityStats(Sydney,100000), CityStats(Lima,100000), CityStats(Dublin,100000))
+ * List(CityStats(Singapore,100000), CityStats(Sydney,100000), CityStats(Lima,100000))
+ * List(CityStats(Sydney,100002), CityStats(Lima,100001), CityStats(Singapore,100000))
+ * }}}
+ */
 @main def runFpCityRankings(): Unit = {
   fpCityRankings.run().unsafeRunSync()
 }
