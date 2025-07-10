@@ -1,3 +1,4 @@
+//> using scala 3
 //> using dep "org.json4s::json4s-native::4.0.7"
 
 import org.json4s.{JArray, JObject, JString, JValue}
@@ -35,13 +36,33 @@ object JsonPatcher {
     Try(JsonParser.parse(jsonString))
   }
 
-  @main def runJsonParser(): Unit = {
-    val jsonString =
-      """[{"hello": "world"}, {"hello": "universe", "other": "value"}]"""
-
-    parseJson(jsonString) match {
+  /** Entry point for the JSON patching CLI tool.
+    *
+    * This function parses a JSON string, updates the value of the specified
+    * field in each JSON object, and prints the resulting JSON.
+    *
+    * Example {{{ $ scala-cli JsonPatcher.scala -- '[{"hello": "world"},
+    * {"hello": "universe", "other": "value"}]' "hello" "modified" }
+    *
+    * [{ "hello":"modified" },{ "hello":"modified", "other":"value" }]
+    *
+    * }}}
+    *
+    * @param input
+    *   A JSON array string (each element should be a JSON object).
+    * @param key
+    *   The field name to patch in each object.
+    * @param patchedValue
+    *   The new value to assign to the specified field.
+    */
+  @main def runJsonPatcher(
+      input: String,
+      key: String,
+      patchedValue: String
+  ): Unit = {
+    parseJson(input) match {
       case Success(jsonObject) =>
-        val result = patchField(jsonObject, "hello", "patched")
+        val result = patchField(jsonObject, key, patchedValue)
         println(JsonMethods.pretty(JsonMethods.render(result)))
       case Failure(exception) =>
         println(s"Failed to parse JSON: ${exception.getMessage}")
