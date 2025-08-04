@@ -23,13 +23,23 @@ def findTheDifference(s: String, t: String): Char = {
 /** Given a string s, find the length of the longest substring without duplicate
   * characters.
   */
-def lengthOfLongestSubstring(s: String): Int =
+def lengthOfLongestSubstring(s: String): Int = {
   s.scanLeft("")((resStr, curChar) =>
     resStr.substring(1 + resStr.indexOf(curChar)) + curChar
   ).map(_.length)
     .reduce(Math.max)
+}
+
+/**
+ * Given two strings needle and haystack, return the index of the first occurrence of needle in haystack,
+ * or -1 if needle is not part of haystack.
+ */
+def strStr(haystack: String, needle: String): Int = {
+  haystack.indexOf(needle)
+}
 
 @main def deck(): Unit =
   println("mergeAlternately: " + mergeAlternately("abcd", "pq"))
   println("findTheDifference: " + findTheDifference("abc", "abcy"))
   println("lengthOfLongestSubstring: " + lengthOfLongestSubstring("abcabcbb"))
+  println("strStr: " + strStr("sadbutsad", "sad"))
