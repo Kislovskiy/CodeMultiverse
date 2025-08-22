@@ -1,3 +1,5 @@
+//> using dep org.scalameta::munit::1.1.1
+
 /** You are given two strings word1 and word2. Merge the strings by adding
   * letters in alternating order, starting with word1. If a string is longer
   * than the other, append the additional letters onto the end of the merged
@@ -30,16 +32,37 @@ def lengthOfLongestSubstring(s: String): Int = {
     .reduce(Math.max)
 }
 
-/**
- * Given two strings needle and haystack, return the index of the first occurrence of needle in haystack,
- * or -1 if needle is not part of haystack.
- */
+/** Given two strings needle and haystack, return the index of the first
+  * occurrence of needle in haystack, or -1 if needle is not part of haystack.
+  */
 def strStr(haystack: String, needle: String): Int = {
   haystack.indexOf(needle)
 }
 
-@main def deck(): Unit =
-  println("mergeAlternately: " + mergeAlternately("abcd", "pq"))
-  println("findTheDifference: " + findTheDifference("abc", "abcy"))
-  println("lengthOfLongestSubstring: " + lengthOfLongestSubstring("abcabcbb"))
-  println("strStr: " + strStr("sadbutsad", "sad"))
+/** Given two strings s and t, return true if t is an of s, and false otherwise.
+  */
+def isAnagram(s: String, t: String): Boolean = {
+  s.sorted == t.sorted
+}
+
+class deckTest extends munit.FunSuite {
+  test("mergeAlternately") {
+    assert(mergeAlternately("abcd", "pq") == "apbqcd")
+  }
+  test("findTheDifference") {
+    assert(findTheDifference("abc", "abcy") == 'y')
+  }
+  test("lengthOfLongestSubstring") {
+    assert(lengthOfLongestSubstring("abcabcbb") == 3)
+  }
+  test("strStr") {
+    assert(strStr("sadbutsad", "sad") == 0)
+  }
+  test("isAnagram") {
+    assert(isAnagram("anagram", "nagaram"))
+  }
+}
+
+@main def deck(): Unit = {
+  println("run 'scala-cli test deck.scala' to execute the tests")
+}
