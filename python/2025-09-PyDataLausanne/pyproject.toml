@@ -1,0 +1,12 @@
+[project]
+name = "2025-09-pydatalausanne"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.10.6",
+    "memory-graph>=0.3.53",
+    "pytest>=8.4.2",
+    "ruff>=0.12.12",
+]

@@ -1,4 +1,6 @@
-//> using dep org.scalameta::munit::1.1.1
+//> using dep org.scalameta::munit::1.2.0
+
+import scala.annotation.tailrec
 
 /** You are given two strings word1 and word2. Merge the strings by adding
   * letters in alternating order, starting with word1. If a string is longer
@@ -45,6 +47,25 @@ def isAnagram(s: String, t: String): Boolean = {
   s.sorted == t.sorted
 }
 
+/** Given an array of integers nums and an integer target, return indices of the
+  * two numbers such that they add up to target.
+  */
+def twoSum(nums: Array[Int], target: Int): Array[Int] = {
+  @tailrec
+  def twoSum(index: Int, previous: Map[Int, Int]): Array[Int] = {
+    previous.get(target - nums(index)) match {
+      case Some(previousIndex) => Array(previousIndex, index)
+      case None => twoSum(index + 1, previous ++ Map(nums(index) -> index))
+    }
+  }
+
+  twoSum(0, Map.empty)
+}
+
+@main def deck(): Unit = {
+  println("run 'scala-cli test deck.scala' to execute the tests")
+}
+
 class deckTest extends munit.FunSuite {
   test("mergeAlternately") {
     assert(mergeAlternately("abcd", "pq") == "apbqcd")
@@ -61,8 +82,9 @@ class deckTest extends munit.FunSuite {
   test("isAnagram") {
     assert(isAnagram("anagram", "nagaram"))
   }
-}
-
-@main def deck(): Unit = {
-  println("run 'scala-cli test deck.scala' to execute the tests")
+  test("twoSum") {
+    assert(twoSum(Array(2, 7, 11, 15), 9) sameElements Array(0, 1))
+    assert(twoSum(Array(3, 2, 4), 6) sameElements Array(1, 2))
+    assert(twoSum(Array(3, 3), 6) sameElements Array(0, 1))
+  }
 }
