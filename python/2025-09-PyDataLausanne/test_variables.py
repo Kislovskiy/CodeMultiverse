@@ -10,7 +10,9 @@ def test_variables_are_labels():
     └───────────┘
     More about this in Python Data Model: https://docs.python.org/3/reference/datamodel.html#objects-values-and-types
     """
-    a = list([1, 2, 3])  #  = is an assignment statement to create a new variable that holds a reference to a list.
+    a = list(
+        [1, 2, 3]
+    )  #  = is an assignment statement to create a new variable that holds a reference to a list.
     b = a
     a.append(4)
     assert a == [1, 2, 3, 4]
@@ -48,7 +50,9 @@ def test_that_object_instantiated_before_multiplication(capsys):
 
 def f(x: int) -> int:
     print(f"id(x) = {id(x)}")
-    x = x + 5  # assignment statement to create a new variable that holds a reference to an integer number
+    x = (
+        x + 5
+    )  # assignment statement to create a new variable that holds a reference to an integer number
     print(f"id(x) = {id(x)}")
 
 

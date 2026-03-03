@@ -16,7 +16,7 @@ class Solution:
                 return False
             previous_bit = current_bit
             n = n >> 1
-        
+
         return True
         """
         previous_bit = n & 1
@@ -28,12 +28,13 @@ class Solution:
                 return False
             previous_bit = current_bit
             n = n >> 1
-        
+
         return True
-    
+
     def hasAlternateBits2(self, n: int) -> bool:
         m = n ^ (n >> 1)
         return m & (m + 1) == 0
+
 
 solution = Solution()
 print(f"{solution.hasAlternatingBits(5)} {solution.hasAlternateBits2(5)}")

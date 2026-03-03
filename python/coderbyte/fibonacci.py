@@ -1,5 +1,6 @@
 from functools import lru_cache
 
+
 def fib(n, memo=None):
     if memo is None:
         memo = {}
@@ -10,9 +11,10 @@ def fib(n, memo=None):
     elif n <= 2:
         return 1
     else:
-        result = fib(n-1, memo) + fib(n-2, memo)
+        result = fib(n - 1, memo) + fib(n - 2, memo)
         memo[n] = result
         return result
+
 
 @lru_cache
 def fib2(n):
@@ -21,7 +23,7 @@ def fib2(n):
     elif n <= 2:
         return 1
     else:
-        return fib(n-1) + fib(n-2)
+        return fib(n - 1) + fib(n - 2)
 
 
 print(fib.__defaults__)

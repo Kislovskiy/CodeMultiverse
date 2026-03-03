@@ -1,3 +1,4 @@
+
 import memory_graph as mg
 from matplotlib 
 
@@ -8,3 +9,4 @@ class Object:
         print(f"Object id: {self.id}")
 
 mg.show(locals())
+
