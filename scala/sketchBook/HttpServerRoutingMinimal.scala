@@ -1,6 +1,6 @@
 //> using scala 3
-//> using dep "org.apache.pekko::pekko-actor-typed:1.1.4"
-//> using dep "org.apache.pekko::pekko-stream::1.1.4"
+//> using dep "org.apache.pekko::pekko-actor-typed:1.1.5"
+//> using dep "org.apache.pekko::pekko-stream::1.1.5"
 //> using dep "org.apache.pekko::pekko-http::1.2.0"
 
 import org.apache.pekko.actor.typed.ActorSystem
