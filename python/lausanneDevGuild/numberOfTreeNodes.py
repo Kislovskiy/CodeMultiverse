@@ -9,10 +9,10 @@ a left (0) or right (1) turn from the root.
 
 
 class Node:
-    def __init__(self, val, left=None, right=None):
+    def __init__(self, val, left: "Node | None" = None, right: "Node | None" = None):
         self.val = val
-        self.left = left
-        self.right = right
+        self.left: "Node | None" = left
+        self.right: "Node | None" = right
 
     def __str__(self):
         return f"Node({self.val=} {self.left=}, {self.right=})"
