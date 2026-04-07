@@ -9,9 +9,9 @@ from art import text2art
 
 def main() -> None:
     # Art = text2art("Code Multiverse", "chunky")
-    Art = text2art("Code Multiverse", "crawford")
+    # Art = text2art("Code Multiverse", "crawford")
     # Art = text2art("Code Multiverse", "pawp")
-    # Art = text2art("Code Multiverse", "small")
+    Art = text2art("Code Multiverse", "small")
     print(Art)
 
 
