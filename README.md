@@ -1,4 +1,5 @@
-# Code Multiverse 
+# Code Multiverse
+```
     __   ___   ___      ___      ___ ___  __ __  _      ______  ____  __ __    ___  ____    _____   ___
    /  ] /   \ |   \    /  _]    |   T   T|  T  T| T    |      Tl    j|  T  |  /  _]|    \  / ___/  /  _]
   /  / Y     Y|    \  /  [_     | _   _ ||  |  || |    |      | |  T |  |  | /  [_ |  D  )(   \_  /  [_
@@ -6,5 +7,5 @@
 /   \_ |     ||     ||   [_     |   |   ||  :  ||     T  |  |   |  | l  :  !|   [_ |    \  /  \ ||   [_
 \     |l     !|     ||     T    |   |   |l     ||     |  |  |   j  l  \   / |     T|  .  Y \    ||     T
  \____j \___/ l_____jl_____j    l___j___j \__,_jl_____j  l__j  |____j  \_/  l_____jl__j\_j  \___jl_____j
-
-Coding sketchbook by Artem Kislovskiy
+```
+A coding sketchbook by Artem Kislovskiy.
