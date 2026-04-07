@@ -41,3 +41,11 @@ node_modules/
 .venv/
 .ruff_cache
 *.pyc
+
+.zig-cache/
+zig-out/
+/release/
+/debug/
+/build/
+/build-*/
+/docgen_tmp/
