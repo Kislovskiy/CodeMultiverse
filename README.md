@@ -3,5 +3,10 @@
  / __| ___  __| | ___  |  \/  | _  _ | || |_ (_)__ __ ___  _ _  ___ ___
 | (__ / _ \/ _` |/ -_) | |\/| || || || ||  _|| |\ V // -_)| '_|(_-</ -_)
  \___|\___/\__,_|\___| |_|  |_| \_,_||_| \__||_| \_/ \___||_|  /__/\___|
-```
+
 A coding sketchbook by Artem Kislovskiy.
+```
+
+# Code Multiverse
+
+A monorepo with small self-contained subprojects.
