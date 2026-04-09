@@ -1,18 +1,17 @@
-= React
+# React
 
 Very minimalistic React app.
 
-Why do I need React? Why not just?
-```
+```sh
 document.createElement
 ```
 
-== Installation
+# Installation
 `npm` is your best friend to get dependencies.
 
-```shell
+```sh
 $ npm --version
-10.2.0
+11.12.1
 $ npm init
 $ npm install --save react
 $ npm install --save react-dom

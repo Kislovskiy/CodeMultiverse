@@ -1,4 +1,5 @@
-//> using dep org.scalameta::munit::1.2.0
+//> using scala 3
+//> using dep org.scalameta::munit::1.2.4
 
 import scala.annotation.tailrec
 
@@ -62,6 +63,12 @@ def twoSum(nums: Array[Int], target: Int): Array[Int] = {
   twoSum(0, Map.empty)
 }
 
+/** Find all unique triplets in an array that sum to zero.
+  */
+// def threeSum(nums: Array[Int]): Array[Array[Int]] {
+//   nums. 
+// }
+
 @main def deck(): Unit = {
   println("run 'scala-cli test deck.scala' to execute the tests")
 }
@@ -86,5 +93,14 @@ class deckTest extends munit.FunSuite {
     assert(twoSum(Array(2, 7, 11, 15), 9) sameElements Array(0, 1))
     assert(twoSum(Array(3, 2, 4), 6) sameElements Array(1, 2))
     assert(twoSum(Array(3, 3), 6) sameElements Array(0, 1))
+  }
+  
+  test("threeSum") {
+    // assert(threeSum(Array(-1, 0, 1, 2, -1, -4), ))
+    // assert(threeSum(Array(1, 2, 3, 4, 5), ))
+    // assert(threeSum(Array(0, 0, 0, 0), ))
+    // assert(threeSum(Array(-4, -1, -1, 0, 1, 2, 2), ))
+    // assert(threeSum(Array(-10, -7, -3, -1, 0, 3, 7, 10), ))
+    // assert(threeSum(Array(-3, -5, -7, -9), ))
   }
 }
